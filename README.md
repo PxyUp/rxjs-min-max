@@ -7,6 +7,8 @@ RxJs Operators for emits minimum/maximum value on each iteration.
 # Example
 
   ```javascript
+    import { maxStream, maxStream } from 'rxjs-min-max'
+
     of(1, 1, 2, 2, 2, 0, 1, 2, 3, -1, 4).pipe(
       maxStream(),
     )
