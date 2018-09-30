@@ -62,8 +62,28 @@ console.time('min');
 rxjs.from(array).pipe(min()).subscribe((x) => console.log(x));
 console.timeEnd('min');
 
+// count n = 100000
 // 0
 // minStream: 11.276ms
 // 0
 // min: 40.306ms
+
+// count n = 1000000
+// 0
+// minStream: 24.084ms
+// 0
+// min: 72.204ms
+
+// count n = 10000000
+// 1
+// minStream: 137.856ms
+// 1
+// min: 437.046ms
+
+// count n = 1000
+// 0
+// minStream: 5.738ms
+// 0
+// min: 1.779ms
+
 ```
