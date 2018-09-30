@@ -1,6 +1,6 @@
 {
   "name": "rxjs-min-max",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "RxJs Operators for emits minimum/maximum value on each iteration.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
