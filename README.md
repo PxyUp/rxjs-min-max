@@ -40,7 +40,7 @@ You can used this operators like min/max:
   .pipe(
     minStream(), // maxStream
     last()
-) => min() / max()
+) // equal min() / max()
 ```
 
 If size of stream big(n > 10000), minStream(maxStream) work faster than min(max):
