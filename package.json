@@ -1,0 +1,16 @@
+{
+  "name": "rxjs-min-max",
+  "version": "1.0.0",
+  "description": "RxJs Operators for emits minimum/maximum value on each iteration.",
+  "main": "index.js",
+  "repository": "git@github.com:PxyUp/rxjs-min-max.git",
+  "author": "Yura Panarin <tduble94@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "rxjs": "^6.3.3",
+    "typescript": "^3.1.1"
+  }
+}
