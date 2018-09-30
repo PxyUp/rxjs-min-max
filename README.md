@@ -1,6 +1,6 @@
 # rxjs-min-max
 
-RxJs Operators for emits maximum value on each iteration.
+RxJs Operators for emits minimum/maximum value on each iteration.
 
 [![NPM](https://nodei.co/npm/rxjs-min-max.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/rxjs-min-max/)
 
@@ -18,8 +18,14 @@ RxJs Operators for emits maximum value on each iteration.
       { age: 3, name: 'Foo'},
       { age: 6, name: 'Foo'},
     ).pipe(
-      distinctUntilChanged((p: Person, q: Person) => p.age > q.age),
+      minStream((p: Person, q: Person) => p.age > q.age),
     )
     .subscribe(x => console.log(x));
+ 
+    // displays:
+    // { age: 4, name: 'Foo' }
+    // { age: 4, name: 'Foo' }
+    // { age: 3, name: 'Foo'},
+    // { age: 3, name: 'Foo'},
  
   ```
