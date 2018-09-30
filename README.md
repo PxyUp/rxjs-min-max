@@ -32,9 +32,9 @@ RxJs Operators for emits minimum/maximum value on each iteration.
  
   ```
 
-  # Performance
+# Performance
 
-  You can used this operators like min/max:
+You can used this operators like min/max:
   
 ```javascript 
   .pipe(
